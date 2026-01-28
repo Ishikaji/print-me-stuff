@@ -1,0 +1,24 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Print Me Stuff'
+theme = 'printmestuff'
+
+[params]
+  description = "Original 3D-printed creations made with passion"
+  author = "Print Me Stuff"
+  primaryColor = "#FF6B35"
+  linkedinURL = "https://linkedin.com/in/placeholder"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "#about"
+    weight = 1
+  [[menu.main]]
+    name = "Testimonials"
+    url = "#testimonials"
+    weight = 2
+  [[menu.main]]
+    name = "Contact"
+    url = "#contact"
+    weight = 3

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init:*)",
+      "Bash(hugo version:*)",
+      "Bash(hugo new:*)",
+      "Bash(hugo:*)"
+    ]
+  }
+}

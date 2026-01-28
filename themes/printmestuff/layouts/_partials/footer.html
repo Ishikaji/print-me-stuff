@@ -1,0 +1,19 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">Print Me Stuff</span>
+                <p class="footer-tagline">Original 3D-printed creations</p>
+            </div>
+            <div class="footer-links">
+                <a href="{{ "privacy-policy/" | relURL }}" class="footer-link">Privacy Policy</a>
+                <a href="{{ site.Params.linkedinURL }}" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; {{ now.Year }} Print Me Stuff. All rights reserved.</p>
+        </div>
+    </div>
+</footer>

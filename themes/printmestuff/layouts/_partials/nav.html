@@ -1,0 +1,22 @@
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="{{ "/" | relURL }}" class="nav-logo">
+            <span class="logo-text">Print Me Stuff</span>
+        </a>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                {{ range site.Menus.main }}
+                <li class="nav-item">
+                    <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+                </li>
+                {{ end }}
+            </ul>
+            <button class="btn btn-shop" id="shop-btn">Shop</button>
+        </div>
+    </div>
+</nav>

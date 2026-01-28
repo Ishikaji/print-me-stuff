@@ -1,0 +1,140 @@
+{{ define "main" }}
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">{{ site.Title }}</h1>
+            <p class="hero-tagline">Original 3D-printed creations</p>
+            <a href="#about" class="hero-cta">Discover More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">Welcome to <strong>Print Me Stuff</strong>, where imagination meets innovation.</p>
+                    <p>Every product in our collection is a unique creation, born from a passion for 3D printing and design. From the initial concept sketched in Blender to the final polished piece that arrives at your doorstep, each item is crafted with meticulous attention to detail.</p>
+                    <p>We specialize in custom-made 3D-printed goods that span across categories: stunning <strong>home decorations</strong> that add character to your space, clever <strong>daily-life tools</strong> that solve everyday problems, and whimsical <strong>fun gadgets</strong> that bring joy to your routine.</p>
+                    <p>What sets us apart? <strong>Originality and uniqueness</strong>. You won't find mass-produced items here. Every piece is designed, printed, and finished by hand, ensuring that what you receive is truly one-of-a-kind.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-cube"></i>
+                        <h3>Custom Design</h3>
+                        <p>Each model is originally designed in Blender</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-print"></i>
+                        <h3>Quality Print</h3>
+                        <p>Precision 3D printing with premium materials</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-hand-sparkles"></i>
+                        <h3>Hand Finished</h3>
+                        <p>Every piece is carefully polished by hand</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="slider-container">
+                <button class="slider-arrow slider-prev" aria-label="Previous testimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slider">
+                    <div class="slide active">
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Absolutely stunning craftsmanship! The desk organizer I ordered fits perfectly in my home office. You can tell it's made with real care and attention to detail."</p>
+                            <p class="testimonial-author">- Sarah M.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"I've ordered multiple items and each one has exceeded my expectations. The quality is incredible and everyone asks where I got them!"</p>
+                            <p class="testimonial-author">- James T.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The custom phone stand is both beautiful and functional. It's amazing to own something that's truly unique and not mass-produced."</p>
+                            <p class="testimonial-author">- Emily R.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Fast shipping and the product was even better in person. The geometric vase is now the centerpiece of my living room!"</p>
+                            <p class="testimonial-author">- Michael K.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-arrow slider-next" aria-label="Next testimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="slider-dots"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have a question or want to discuss a custom order? We'd love to hear from you!</p>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required placeholder="What is this about?">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+{{ end }}
