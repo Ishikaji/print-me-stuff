@@ -19,5 +19,57 @@ collections:
             fields:
               - {label: Slogan bannière, name: tagline, widget: string}
               - {label: Bouton, name: cta_text, widget: string}
+          - label: À propos
+            name: about
+            widget: object
+            collapsed: true
+            fields:
+              - {label: Titre section, name: title, widget: string}
+              - {label: Accroche, name: lead, widget: text}
+              - label: Paragraphes
+                name: paragraphs
+                widget: list
+                field: {label: Paragraphe, name: paragraph, widget: text}
+              - label: Caractéristiques
+                name: features
+                widget: list
+                fields:
+                  - {label: Icône (classe Font Awesome), name: icon, widget: string}
+                  - {label: Titre, name: title, widget: string}
+                  - {label: Description, name: description, widget: string}
+          - label: Témoignages
+            name: testimonials
+            widget: object
+            collapsed: true
+            fields:
+              - {label: Titre section, name: title, widget: string}
+              - label: Témoignages
+                name: items
+                widget: list
+                fields:
+                  - {label: Étoiles (1-5), name: stars, widget: number, value_type: int, min: 1, max: 5}
+                  - {label: Texte, name: text, widget: text}
+                  - {label: Auteur, name: author, widget: string}
+          - label: Contact
+            name: contact
+            widget: object
+            collapsed: true
+            fields:
+              - {label: Titre section, name: title, widget: string}
+              - {label: Sous-titre, name: subtitle, widget: text}
+              - label: Formulaire
+                name: form
+                widget: object
+                collapsed: true
+                fields:
+                  - {label: Label nom, name: name_label, widget: string}
+                  - {label: Placeholder nom, name: name_placeholder, widget: string}
+                  - {label: Label email, name: email_label, widget: string}
+                  - {label: Placeholder email, name: email_placeholder, widget: string}
+                  - {label: Label sujet, name: subject_label, widget: string}
+                  - {label: Placeholder sujet, name: subject_placeholder, widget: string}
+                  - {label: Label message, name: message_label, widget: string}
+                  - {label: Placeholder message, name: message_placeholder, widget: string}
+                  - {label: Texte bouton envoi, name: submit_text, widget: string}
     editor:
       preview: true
