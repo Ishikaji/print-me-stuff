@@ -12,6 +12,12 @@ collections:
         file: "content/_index.md"
         fields:
           - {label: Titre, name: title, widget: string}
-          - {label: Slogan bannière, name: hero.tagline, widget: string}
+          - label: Bannière
+            name: hero
+            widget: object
+            collapsed: true
+            fields:
+              - {label: Slogan bannière, name: tagline, widget: string}
+              - {label: Bouton, name: cta_text, widget: string}
     editor:
       preview: true
