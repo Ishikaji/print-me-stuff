@@ -4,15 +4,13 @@ backend:
 media_folder: assets/images
 public_folder: /img
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - label: "Accueil"
+        name: "accueil"
+        file: "content/_index.md"
+        fields:
+          {label: Slogan bannière, name: hero.tagline, widget: string}
     editor:
       preview: true
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
