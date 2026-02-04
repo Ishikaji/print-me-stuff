@@ -11,6 +11,6 @@ collections:
         name: "accueil"
         file: "content/_index.md"
         fields:
-          {label: Slogan bannière, name: hero.tagline, widget: string}
+          - {label: Slogan bannière, name: hero.tagline, widget: string}
     editor:
       preview: true
