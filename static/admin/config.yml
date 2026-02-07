@@ -3,6 +3,8 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 media_folder: assets/images
 public_folder: /img
+publish_mode: editorial_workflow
+show_preview_links: true
 collections:
   - name: 'pages'
     label: 'Pages'
