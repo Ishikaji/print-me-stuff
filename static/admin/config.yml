@@ -76,3 +76,10 @@ collections:
                   - {label: Label message, name: message_label, widget: string}
                   - {label: Placeholder message, name: message_placeholder, widget: string}
                   - {label: Texte bouton envoi, name: submit_text, widget: string}
+      - label: "Mentions légales"
+        name: "mentions-legales"
+        file: "content/mentions-legales.md"
+        preview_path: mentions-legales
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: 'Body', name: 'body', widget: 'markdown'}
