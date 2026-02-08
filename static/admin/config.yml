@@ -7,7 +7,6 @@ media_folder: static/img
 public_folder: /img
 
 site_url: https://print-me-stuff.netlify.app
-display_url: Retourner au site
 
 collections:
   - name: 'pages'
