@@ -1,11 +1,13 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
+  repo: Ishikaji/print-me-stuff
 
 media_folder: static/img
 public_folder: /img
 
 site_url: https://print-me-stuff.netlify.app
+display_url: Retourner au site
 
 collections:
   - name: 'pages'
